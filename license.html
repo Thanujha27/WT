@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Driving License</title>
+
+<style>
+    body {
+        background: #6fb2b7;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .dl-card {
+        width: 760px;
+        height: 420px;
+        background: #f6dede;
+        border-radius: 14px;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+        padding: 16px;
+        box-sizing: border-box;
+        position: relative;
+    }
+
+    /* Header */
+    .header {
+        background: #c62828;
+        color: #fff;
+        text-align: center;
+        padding: 8px;
+        font-weight: bold;
+        border-radius: 8px;
+        font-size: 15px;
+    }
+
+    .subheader {
+        text-align: center;
+        font-size: 13px;
+        margin-top: 4px;
+        font-weight: bold;
+    }
+
+    /* Main Content */
+    .content {
+        display: flex;
+        margin-top: 14px;
+    }
+
+    .left {
+        width: 70%;
+        font-size: 13px;
+        line-height: 1.6;
+    }
+
+    .right {
+        width: 30%;
+        text-align: center;
+    }
+
+    .photo {
+        width: 110px;
+        height: 130px;
+        background: #ddd;
+        border: 2px solid #000;
+        margin: 0 auto 10px;
+    }
+
+    .small-photo {
+        width: 45px;
+        height: 55px;
+        background: #ddd;
+        border: 1px solid #000;
+        margin: 0 auto;
+    }
+
+    .chip {
+        width: 90px;
+        height: 60px;
+        background: #e0b44c;
+        border-radius: 8px;
+        margin-bottom: 10px;
+    }
+
+    .row {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .label {
+        font-weight: bold;
+    }
+
+    /* Vehicle Table */
+    .vehicle {
+        margin-top: 8px;
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 12px;
+    }
+
+    .vehicle th, .vehicle td {
+        border: 1px solid #999;
+        padding: 4px;
+        text-align: center;
+    }
+
+    /* Footer */
+    .footer {
+        position: absolute;
+        bottom: 12px;
+        left: 16px;
+        right: 16px;
+        display: flex;
+        justify-content: space-between;
+        font-size: 12px;
+        align-items: center;
+    }
+
+    .sign {
+        text-align: center;
+    }
+
+    .sign-line {
+        margin-top: 6px;
+        width: 140px;
+        border-top: 1px solid #000;
+    }
+
+    /* Watermark */
+    .watermark {
+        position: absolute;
+        top: 110px;
+        left: 200px;
+        font-size: 80px;
+        opacity: 0.06;
+        transform: rotate(-25deg);
+        pointer-events: none;
+    }
+</style>
+</head>
+
+<body>
+
+<div class="dl-card">
+
+    <!-- Header -->
+    <div class="header">
+        THE UNION OF INDIA<br>
+        HYDERABAD STATE MOTOR DRIVING LICENCE
+    </div>
+    <div class="subheader">
+        FORM 7 &nbsp;&nbsp; RULE 16 (2)
+    </div>
+
+    <div class="watermark">MMVD</div>
+
+    <!-- Content -->
+    <div class="content">
+
+        <!-- Left -->
+        <div class="left">
+            <div class="row">
+                <div><span class="label">DL No:</span> MH14 20240012345</div>
+                <div><span class="label">DOI:</span> 01-01-2024</div>
+            </div>
+
+            <div class="row">
+                <div><span class="label">Valid Till:</span> 01-01-2034 (NT)</div>
+                <div><span class="label">DLR:</span> 01-01-2024</div>
+            </div>
+
+            <p class="label">AUTHORISATION TO DRIVE FOLLOWING CLASS OF VEHICLES THROUGHOUT INDIA</p>
+
+            <table class="vehicle">
+                <tr>
+                    <th>COV</th>
+                    <th>DOI</th>
+                </tr>
+                <tr>
+                    <td>LMV</td>
+                    <td>01-01-2024</td>
+                </tr>
+                <tr>
+                    <td>MCWG</td>
+                    <td>01-01-2024</td>
+                </tr>
+            </table>
+
+            <p>
+                <span class="label">Name:</span> NAME SURNAME<br>
+                <span class="label">S/D/W of:</span> NAME SURNAME<br>
+                <span class="label">Address:</span> ADDRESS LINE HERE<br>
+                <span class="label">DOB:</span> 01-01-1995 &nbsp;&nbsp;
+                <span class="label">BG:</span> O+
+            </p>
+
+            <p>
+                <span class="label">PIN:</span> 500001
+            </p>
+        </div>
+
+        <!-- Right -->
+        <div class="right">
+            <div class="chip"></div>
+            <div class="photo"></div>
+            <div class="small-photo"></div>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="sign">
+            Signature & ID of Issuing Authority
+            <div class="sign-line"></div>
+        </div>
+
+        <div class="sign">
+            Signature / Thumb Impression of Holder
+            <div class="sign-line"></div>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
+
+
